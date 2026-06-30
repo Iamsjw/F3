@@ -661,7 +661,7 @@ class _ClassesTabState extends State<ClassesTab> {
     if (result == true) {
       _loadStudentsForClass(currentClass.id);
       if (selectedClassId != null && selectedClassId != currentClass.id) {
-        _loadStudentsForClass(selectedClassId);
+        _loadStudentsForClass(selectedClassId!);
       }
     }
     nameController.dispose();
